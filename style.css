@@ -52,6 +52,7 @@ p a{
     margin: 0;
     background-color: black;
     padding: 10px;
+    padding-right: 75px;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
@@ -63,7 +64,7 @@ p a{
     padding: 16px;
     display: block;
     margin: 0 10px;
-   font-size: 16px;
+    font-size: 16px;
 }
 
 .navbar a:hover{
@@ -131,5 +132,5 @@ p a{
   }
 
   #senha {
-    
+    margin-left: 13px;
   }
