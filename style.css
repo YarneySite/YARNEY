@@ -5,11 +5,7 @@
     --offwhite: #fdfaf2;
 }
 
-/*arrumar*/
-@font-face {
-    font-family: "Anonymous Pro";
-    src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
- }
+
 
 *{
     margin: 0;
@@ -55,7 +51,9 @@ p a{
     margin: 0;
     margin: 0;
     background-color: black;
-    padding: 0;
+    padding: 10px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
 
 }
 
@@ -83,18 +81,24 @@ p a{
     border-radius: 15px;
     width: 500px;
     height: 240px;
+    font-family: "Anonymous Pro", serif;
     font-size: 25px;
  }
 
  #login label{
     margin-left: 13%;
+    font-family: "Anonymous Pro", serif;
+
  }
 
  #login input{
     height: 30px;
     width: 260px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 13px;
+    padding: 7.5px;
+    font-family: "Anonymous Pro", serif;
+
  }
 
  .btn-criar-conta{
@@ -105,6 +109,8 @@ p a{
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  font-family: "Anonymous Pro", serif;
+
  }
 
 #btn-entrar {
@@ -120,5 +126,10 @@ p a{
     margin-left: 45%;
     margin-right: 45%;
     margin-top: 35px;
+    font-family: "Anonymous Pro", serif;
+
   }
 
+  #senha {
+    
+  }
