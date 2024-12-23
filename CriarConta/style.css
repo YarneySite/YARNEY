@@ -1,10 +1,10 @@
 /*Definição das cores utilizadas no site*/
-
-:root {
-    --amarelologo: #ffcc00;
-    --offwhite: #fdfaf2;
+:root{
+    --roxo1:  #4b0b51;
+    --roxo2: #6a1d72;
+    --texto: #ffde59;
+    
 }
-
 /*arrumar*/
 @font-face {
     font-family: "Anonymous Pro";
@@ -17,20 +17,22 @@
 }
 
 body {
-    background-color: var(--offwhite);
+    background-color: #6a1d72;
     /*Mudar as fonter!!*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, p, a, h2 {
+    color: var(--texto);
+}
+
 h1 {
-    color: var(--amarelologo);
     text-align: center;
-    font-size: 66px;
-    margin-top: 17px;
+    font-size: 56px;
+    margin-top: 9px;
 }
 
 p {
-    color: var(--amarelologo);
     text-align: center;
     font-size: 19px;
     margin-top: -5px;
@@ -38,7 +40,6 @@ p {
 
 p a {
     text-decoration: none;
-    color: var(--amarelologo);
     text-decoration: underline;
     font-weight: bold;
 }
@@ -56,7 +57,7 @@ p a {
     overflow: hidden;
     margin: 0;
     margin: 0;
-    background-color: black;
+    background-color: #4b0b51;
     padding: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 15px;
@@ -66,11 +67,9 @@ p a {
 
 
 h2 {
-    color: #ffcc00;
     font-size: 30px;
 }
 .navbar a {
-    color: white;
     text-decoration: none;
     padding: 16px;
     display: block;
@@ -83,28 +82,30 @@ h2 {
 }
 
 #login {
-    background-color: #cdcbc4;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: 31%;
-    margin-right: 31%;
-    margin-top: 35px;
+    background-color: var(--roxo1);
+    margin: 35px auto; /* Centraliza horizontalmente */
     border-radius: 15px;
     width: 500px;
-    height: 240px;
+    padding: 20px; /* Adiciona espaço interno */
     font-size: 25px;
     font-family: "Anonymous Pro", serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center; /* Centraliza os filhos horizontalmente */
+    gap: 15px; /* Espaçamento entre os elementos */
 }
 
 #login label {
-    margin-left: 13%;
+    color: var(--texto);
     font-family: "Anonymous Pro", serif;
+    text-align: left;
+    width: 100%; /* Ocupa a largura total do container */
 }
 
 #login input {
     height: 30px;
-    width: 260px;
+    width: 90%; /* Ajusta a largura dos inputs */
     border-radius: 10px;
     font-size: 15px;
     padding-left: 10px;
@@ -112,8 +113,8 @@ h2 {
 }
 
 .btn-criar-conta {
-    background-color: var(--amarelologo);
-    color: #000;
+    background-color: var(--roxo2);
+    color: var(--texto);
     border: none;
     padding: 8px 12px;
     border-radius: 10px;
@@ -123,12 +124,12 @@ h2 {
 }
 
 .btn-criar-conta:hover {
-    background-color:#ffd737;
+    text-decoration: underline yellow;
     
 }
 
 #btn-entrar {
-    background-color: #000;
+    background-color: var(--roxo1);
     color: #ffcc00;
     border: none;
     padding: 10px;
@@ -139,12 +140,11 @@ h2 {
     height: 60px;
     margin-left: 40%;
     margin-right: 40%;
-    margin-top: 35px;
     font-family: "Anonymous Pro", serif;
 
 }
 
 #btn-entrar:hover {
-    background-color: #ffcc00;
-    color: black;
+    text-decoration: underline yellow;
+    
 }
