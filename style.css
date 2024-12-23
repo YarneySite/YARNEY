@@ -1,7 +1,7 @@
 /*Definição das cores utilizadas no site*/
 
 :root{
-    --amarelologo: #ffde59;
+    --amarelologo: #012677;
     --offwhite: #fdfaf2;
 }
 
@@ -13,9 +13,10 @@
 }
 
 body{
-    background-color: var(--offwhite);
+    background-color: #17f9ff;
     /*Mudar as fonter!!*/
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 h1{
@@ -50,7 +51,7 @@ p a{
     overflow: hidden;
     margin: 0;
     margin: 0;
-    background-color: black;
+    background-color: #001449;
     padding: 10px;
     padding-right: 75px;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -68,11 +69,11 @@ p a{
 }
 
 .navbar a:hover{
-    text-decoration: underline yellow;
+    text-decoration: underline #012677;
 }
 
  #login{
-    background-color: #cdcbc4; 
+    background-color: #00b4fc; 
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -103,10 +104,11 @@ p a{
  }
 
  .btn-criar-conta{
-  background-color: var(--amarelologo);
+  background-color: #005bc5;
   color: #000;
   border: none;
   padding: 8px 12px;
+  height: 50px;
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
@@ -119,7 +121,7 @@ p a{
     color: #ffcc00;
     border: none; 
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
     width: 130px;
