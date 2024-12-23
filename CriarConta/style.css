@@ -1,0 +1,150 @@
+/*Definição das cores utilizadas no site*/
+
+:root {
+    --amarelologo: #ffcc00;
+    --offwhite: #fdfaf2;
+}
+
+/*arrumar*/
+@font-face {
+    font-family: "Anonymous Pro";
+    src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--offwhite);
+    /*Mudar as fonter!!*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: var(--amarelologo);
+    text-align: center;
+    font-size: 66px;
+    margin-top: 17px;
+}
+
+p {
+    color: var(--amarelologo);
+    text-align: center;
+    font-size: 19px;
+    margin-top: -5px;
+}
+
+p a {
+    text-decoration: none;
+    color: var(--amarelologo);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0;
+    margin: 0;
+    background-color: black;
+    padding: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+
+
+}
+
+
+h2 {
+    color: #ffcc00;
+    font-size: 30px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline yellow;
+}
+
+#login {
+    background-color: #cdcbc4;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 31%;
+    margin-right: 31%;
+    margin-top: 35px;
+    border-radius: 15px;
+    width: 500px;
+    height: 240px;
+    font-size: 25px;
+    font-family: "Anonymous Pro", serif;
+}
+
+#login label {
+    margin-left: 13%;
+    font-family: "Anonymous Pro", serif;
+}
+
+#login input {
+    height: 30px;
+    width: 260px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: "Anonymous Pro", serif;
+}
+
+.btn-criar-conta {
+    background-color: var(--amarelologo);
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Anonymous Pro", serif;
+}
+
+.btn-criar-conta:hover {
+    background-color:#ffd737;
+    
+}
+
+#btn-entrar {
+    background-color: #000;
+    color: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 20%;
+    height: 60px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 35px;
+    font-family: "Anonymous Pro", serif;
+
+}
+
+#btn-entrar:hover {
+    background-color: #ffcc00;
+    color: black;
+}
