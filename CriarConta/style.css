@@ -1,7 +1,7 @@
 /*Definição das cores utilizadas no site*/
 
 :root {
-    --amarelologo: #ffde59;
+    --amarelologo: #ffcc00;
     --offwhite: #fdfaf2;
 }
 
@@ -106,7 +106,8 @@ h2 {
     height: 30px;
     width: 260px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 15px;
+    padding-left: 10px;
     font-family: "Anonymous Pro", serif;
 }
 
@@ -121,18 +122,29 @@ h2 {
     font-family: "Anonymous Pro", serif;
 }
 
+.btn-criar-conta:hover {
+    background-color:#ffd737;
+    
+}
+
 #btn-entrar {
     background-color: #000;
     color: #ffcc00;
     border: none;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
-    width: 130px;
+    width: 20%;
     height: 60px;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-left: 40%;
+    margin-right: 40%;
     margin-top: 35px;
     font-family: "Anonymous Pro", serif;
+
+}
+
+#btn-entrar:hover {
+    background-color: #ffcc00;
+    color: black;
 }
