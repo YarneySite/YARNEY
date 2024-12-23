@@ -42,33 +42,43 @@
 
             </ul>
 
-            <button class="btn-criar-conta">FAZER LOGIN</button>
+            <button class="btn-criar-conta"><a href="../FazerLogin/index.html">Fazer Login</a></button>
         </nav>
 
     </header>
-    <main class="container"></main>
+    <main class="container">
 
     <h1>Criar Conta!</h1>
     
 
 
     <form action="">
-
         <div id="login">
-            <label for="nome">Nome: </label>
-            <input type="string" name="nome" placeholder="Digite seu e-mail" class="forms" required>
-            
-            <label for="email">Email: </label>
-            <input type="email" name="email" placeholder="Digite seu e-mail" class="forms" required>
-            <label for="email">Senha:</label>
-            <input id="senha" type="password" name="password" placeholder="Digite sua senha" class="forms" required>
-            <label for="email">Confirme Senha:</label>
-            <input id="senha" type="password" name="password" placeholder="Digite sua senha" class="forms" required>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" class="forms" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail" class="forms" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input id="senha" type="password" name="password" placeholder="Digite sua senha" class="forms" required>
+            </div>
+            <div class="form-group">
+                <label for="confirme-senha">Confirme Senha:</label>
+                <input id="confirme-senha" type="password" name="confirm-password" placeholder="Confirme sua senha" class="forms" required>
+            </div>
+            <div class="form-button ">
+                <button type="" id="btn-entrar"><a href="../Noticias/index.html">Entrar</a></button>
+            </div>
         </div>
 
-        <button id="btn-entrar">ENTRAR</button>
-
+        
     </form>
+    
+    
 
 
     </main>

@@ -1,8 +1,8 @@
 /*Definição das cores utilizadas no site*/
 :root{
-    --roxo1:  #4b0b51;
-    --roxo2: #6a1d72;
-    --texto: #ffde59;
+    --roxo1:  #4b0b5193;
+    --roxo2: #691d72;
+    --texto: orange;
     
 }
 /*arrumar*/
@@ -17,9 +17,18 @@
 }
 
 body {
-    background-color: #6a1d72;
+    background-color: #4b0b51;
+  
+}
+
+main {
+    background: url(../Imagens/nightcity3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
     /*Mudar as fonter!!*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif ;
+    padding-top: 10px;
+   height:  84.5vh;
 }
 
 h1, p, a, h2 {
@@ -56,11 +65,12 @@ p a {
     justify-content: space-between;
     overflow: hidden;
     margin: 0;
-    margin: 0;
+   
     background-color: #4b0b51;
     padding: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 15px;
+    
 
 
 }
@@ -77,74 +87,88 @@ h2 {
     font-size: 16px;
 }
 
+
+
 .navbar a:hover {
     text-decoration: underline yellow;
 }
 
 #login {
     background-color: var(--roxo1);
-    margin: 35px auto; /* Centraliza horizontalmente */
+    margin: 35px auto;
     border-radius: 15px;
     width: 500px;
-    padding: 20px; /* Adiciona espaço interno */
+    padding: 20px;
     font-size: 25px;
     font-family: "Anonymous Pro", serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Organiza os filhos em coluna */
-    align-items: center; /* Centraliza os filhos horizontalmente */
-    gap: 15px; /* Espaçamento entre os elementos */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column; /* Organiza label e input verticalmente */
+    gap: 5px; /* Espaço entre label e input */
+}
+
+.form-button {
+    grid-column: span 2; /* Faz o botão ocupar as duas colunas */
+    text-align: center; /* Centraliza o botão */
+}
+
+#btn-entrar {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: var(--roxo1);
+    color: var(--texto);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+}
+
+#btn-entrar:hover {
+    background-color: var(--roxo3); /* Um tom mais escuro para efeito */
+}
+
+/* Estilo para os labels */
 #login label {
     color: var(--texto);
     font-family: "Anonymous Pro", serif;
-    text-align: left;
-    width: 100%; /* Ocupa a largura total do container */
+    font-size: 18px;
 }
 
+/* Estilo para os inputs */
 #login input {
-    height: 30px;
-    width: 90%; /* Ajusta a largura dos inputs */
+    height: 40px;
+    width: 100%; /* Ocupa a largura do grupo */
     border-radius: 10px;
     font-size: 15px;
     padding-left: 10px;
     font-family: "Anonymous Pro", serif;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
+
 
 .btn-criar-conta {
     background-color: var(--roxo2);
     color: var(--texto);
     border: none;
-    padding: 8px 12px;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     font-family: "Anonymous Pro", serif;
+    
+
 }
+
+
 
 .btn-criar-conta:hover {
     text-decoration: underline yellow;
     
 }
 
-#btn-entrar {
-    background-color: var(--roxo1);
-    color: #ffcc00;
-    border: none;
-    padding: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 20%;
-    height: 60px;
-    margin-left: 40%;
-    margin-right: 40%;
-    font-family: "Anonymous Pro", serif;
-
-}
-
-#btn-entrar:hover {
-    text-decoration: underline yellow;
-    
-}

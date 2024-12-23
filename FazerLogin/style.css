@@ -1,8 +1,8 @@
 /*Definição das cores utilizadas no site*/
 :root{
-    --roxo1:  #4b0b51;
+    --roxo1:  #4b0b51c7;
     --roxo2: #6a1d72;
-    --texto: #ffde59;
+    --texto: orange;
     
 }
 /*arrumar*/
@@ -18,6 +18,8 @@
 
 body {
     background-color: #6a1d72;
+    background: url(../Imagens/nightcity3.png) no-repeat;
+    background-size: cover;
     /*Mudar as fonter!!*/
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -120,9 +122,10 @@ h2 {
 
 .btn-criar-conta {
     background-color: var(--roxo2);
+
     color: var(--texto);
     border: none;
-    padding: 8px 12px;
+
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
