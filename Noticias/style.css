@@ -2,7 +2,10 @@
 :root{
     --roxo1:  #4b0b51;
     --roxo2: #6a1d72;
-    --texto: #ffde59;
+    --backnoticia: #691d72d5;
+    --backnoticia2: #972ba3d5;
+    --textonoticia: yellow;
+    --texto: rgb(250, 179, 46);
     
 }
 /*arrumar*/
@@ -20,6 +23,7 @@ body {
     background-color: #6a1d72;
     /*Mudar as fonter!!*/
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 h1, p, a, h2 {
@@ -39,13 +43,12 @@ h1, p, a, h2 {
     justify-content: space-between;
     overflow: hidden;
     margin: 0;
-    margin: 0;
     background-color: #4b0b51;
     padding: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 15px;
-
-
+    position: fixed;
+    width: 96.4vw;
 }
 
 
@@ -81,8 +84,98 @@ h2 {
     
 }
 
+main{ 
+    text-align: center;
+    background: url(../Imagens/nightcity3.png) center center no-repeat fixed;
+    background-size: cover;
+   
+    height: 100%;  
+    padding-top: 120px;
+    padding-bottom: 5vw;
+    
+}
+
 h1 {
     text-align: center;
     font-size: 56px;
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;    /* Alinha os itens verticalmente */
+    width: 100%;            /* Faz o contêiner ocupar a largura total */
+}
+
+#lupa {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid var(--roxo1);
+    border-right: none; /* Remove borda direita para unir ao campo de busca */
+    display: inline-block;
+    border-right: 1px solid var(--roxo2);
+}
+
+input[type="search"] {
+    width: 565px;
+    height: 37px;
+    background-color: white;
+    border: 1px solid var(--roxo1);
+    border-left: none; /* Remove borda esquerda para unir à lupa */
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none; /* Remove borda de foco padrão */
+}
+.classe {
+    box-sizing: border-box;
+    margin-top: 40px;
+    width: 98.7vw;
+    padding-left: 2%;
+    display: flex;
+    border-bottom: 1px solid var(--texto);
+}
+
+
+
+#linha {
+    width: 75%;
+}
+
+#caixa {
+    height:  200px;
+    width: 200px;
+    background-color: var(--backnoticia);
+    padding: 15px;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    border-radius: 5%;
+
+}
+
+a {
+    text-decoration: none; 
+}
+
+#caixa:hover {
+    background-color: var(--backnoticia2);
+    text-decoration: underline;
+}
+
+
+
+#caixa p {
+    color: var(--textonoticia);
+    font-size: 20px;
+}
+
+#caixa img {
+    height: 75px;
+    width: 150px;
+}
+
+.flex {
+    display: flex;
 }
