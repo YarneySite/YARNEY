@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yarney</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Styles/Header.css">
+    <link rel="stylesheet" href="../Styles/FazerLogin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Caveat&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;600;800&display=swap"
         rel="stylesheet">
+
+</head>
 
 <body>
     
@@ -25,7 +28,7 @@
                 
                 <li>
                     <!--Notícias-->
-                    <a href="../Noticias/index.html">Notícias</a>
+                    <a href="../HTML/Noticias.html">Notícias</a>
                 </li>
                 <li>
                     <!--Tier List-->
@@ -41,11 +44,36 @@
                 </li>
 
             </ul>
-
-            <button class="btn-criar-conta"><a href="../FazerLogin/index.html">FAZER LOGIN</a></button>
+            <!-- Botão para criar a conta -->
+            <button class="btn-navbar"><a href="../HTML/CriarConta.html">Criar Conta</a></button>
         </nav>
 
-    </header>   
+    </header>
+
+    <!-- Principal -->
+    <main class="container"></main>
+
+    <!-- Título -->
+    <h1>Bem-Vindo!</h1>
+    <!-- Subtitulo -->
+    <p>Novo no Yarney? <a href="../CriarConta/index.html">Crie uma conta!</a></p>
+
+    <!-- Formulario -->
+    <form action="">
+
+        <div id="login">
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" class="forms" required>
+            <br><br>
+            <label for="email">Senha:</label>
+            <input id="senha" type="password" name="password" placeholder="Digite sua senha" class="forms" required>
+            <a href="/">Esqueci a senha</a>
+        </div>
+
+        <!-- Botão para entrar -->
+        <button id="btn-entrar"><a href="../HTML/Noticias.html">Entrar</a></button>
+
+    </form>
 
 
     </main>

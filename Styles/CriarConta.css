@@ -1,0 +1,99 @@
+/* Variáveis de coroes */
+:root{
+    --roxo1:  #4b0b5193;
+    --roxo2: #691d72;
+    --texto: orange;
+}
+
+/*Fontes*/
+@font-face {
+    font-family: "Anonymous Pro";
+    src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
+}
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Principal */
+main {
+    background: url(../Imagens/nightcity3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    padding-top: 10px;
+   height:  84.5vh;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 56px;
+    margin-top: 9px;
+}
+
+/* Div do Formulário */
+#login {
+    background-color: var(--roxo1);
+    margin: 35px auto;
+    border-radius: 15px;
+    width: 500px;
+    padding: 20px;
+    font-size: 25px;
+    font-family: "Anonymous Pro", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+/* Organização dos grupos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Organização dos Botões */
+.form-button {
+    grid-column: span 2; 
+    text-align: center;
+}
+
+/* Botão para criar */
+#btn-entrar {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: var(--roxo1);
+    color: var(--texto);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+}
+
+/* Efeito para o botão de criar */
+#btn-entrar:hover {
+    background-color: var(--roxo3);
+}
+
+/* Texto do Formulário */
+#login label {
+    color: var(--texto);
+    font-family: "Anonymous Pro", serif;
+    font-size: 18px;
+}
+
+/* Estilo para os inputs */
+#login input {
+    height: 40px;
+    width: 100%; /* Ocupa a largura do grupo */
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: "Anonymous Pro", serif;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

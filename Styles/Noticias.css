@@ -1,90 +1,30 @@
-/*Definição das cores utilizadas no site*/
+/* Cores */
 :root{
     --roxo1:  #4b0b51;
     --roxo2: #6a1d72;
     --backnoticia: #691d72d5;
-    --backnoticia2: #972ba3d5;
-    --textonoticia: yellow;
-    --texto: rgb(250, 179, 46);
-    
+    --backnoticia2: #972ba3d5;    
 }
-/*arrumar*/
+
+/* Fontes */
 @font-face {
     font-family: "Anonymous Pro";
     src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
 }
 
+/* Geral */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Corpo */
 body {
     background-color: #6a1d72;
-    /*Mudar as fonter!!*/
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
-h1, p, a, h2 {
-    color: var(--texto);
-}
-
-
-
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
-.navbar {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    overflow: hidden;
-    margin: 0;
-    background-color: #4b0b51;
-    padding: 0;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 15px;
-    position: fixed;
-    width: 96.4vw;
-}
-
-
-h2 {
-    font-size: 30px;
-}
-.navbar a {
-    text-decoration: none;
-    padding: 16px;
-    display: block;
-    margin: 0 10px;
-    font-size: 16px;
-}
-
-.navbar a:hover {
-    text-decoration: underline yellow;
-}
-
-
-.btn-criar-conta {
-    background-color: var(--roxo2);
-    color: var(--texto);
-    border: none;
-
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: "Anonymous Pro", serif;
-}
-
-.btn-criar-conta:hover {
-    text-decoration: underline yellow;
-    
-}
-
+/* Principal */
 main{ 
     text-align: center;
     background: url(../Imagens/nightcity3.png) center center no-repeat fixed;
@@ -96,6 +36,7 @@ main{
     
 }
 
+/* Titulo */
 h1 {
     text-align: center;
     font-size: 56px;
@@ -130,6 +71,7 @@ input[type="search"] {
     box-sizing: border-box;
     outline: none; /* Remove borda de foco padrão */
 }
+
 .classe {
     box-sizing: border-box;
     margin-top: 40px;
@@ -138,8 +80,6 @@ input[type="search"] {
     display: flex;
     border-bottom: 1px solid var(--texto);
 }
-
-
 
 #linha {
     width: 75%;

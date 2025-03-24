@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --roxo1:  #4b0b51;
+    --roxo2: #6a1d72;
+    --texto: #ffa500;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    width: 640px;
+    margin: auto;
+    background-color: var(--roxo1);
+    min-height: 480px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+main img {
+    margin-top: 40px;
+    width: 320px;
+}

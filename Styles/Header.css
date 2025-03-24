@@ -1,38 +1,42 @@
-/*Definição das cores utilizadas no site*/
+/*Cores*/
 :root{
     --roxo1:  #4b0b51;
     --roxo2: #6a1d72;
-    --texto: #ffde59;
+    --texto: #ffa500;
     
 }
-/*arrumar*/
+
+/*Fontes */
 @font-face {
     font-family: "Anonymous Pro";
     src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
 }
 
+/* Geral */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Corpo */
 body {
     background-color: #6a1d72;
-    /*Mudar as fonter!!*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Cor do texto */
 h1, p, a, h2 {
     color: var(--texto);
 }
 
-
+/* Lista do Header */
 .navbar ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
 }
 
+/* Header */
 .navbar {
     display: flex;
     list-style-type: none;
@@ -48,10 +52,12 @@ h1, p, a, h2 {
 
 }
 
-
+/* Tamanho da fonte do Subtitulo */
 h2 {
     font-size: 30px;
 }
+
+/* Link do Header */
 .navbar a {
     text-decoration: none;
     padding: 16px;
@@ -60,12 +66,13 @@ h2 {
     font-size: 16px;
 }
 
+/* Decoração do Link do Header */
 .navbar a:hover {
     text-decoration: underline yellow;
 }
 
-
-.btn-criar-conta {
+/* Botão para criar a conta*/
+.btn-navbar {
     background-color: var(--roxo2);
     color: var(--texto);
     border: none;
@@ -76,8 +83,10 @@ h2 {
     font-family: "Anonymous Pro", serif;
 }
 
-.btn-criar-conta:hover {
+/* Efeito de botão para criar a conta */
+.btn-navbar:hover {
     text-decoration: underline yellow;
     
 }
+
 

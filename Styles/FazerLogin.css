@@ -1,21 +1,24 @@
-/*Definição das cores utilizadas no site*/
+/* Cores */
 :root{
     --roxo1:  #4b0b51c7;
     --roxo2: #6a1d72;
     --texto: orange;
     
 }
-/*arrumar*/
+
+/* Fontes */
 @font-face {
     font-family: "Anonymous Pro";
     src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
 }
 
+/* Geral */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Corpo */
 body {
     background-color: #6a1d72;
     background: url(../Imagens/nightcity3.png) no-repeat;
@@ -24,65 +27,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Cor dos texto */
 h1, p, a, h2 {
     color: var(--texto);
 }
 
+/* Título */
 h1 {
     text-align: center;
     font-size: 66px;
     margin-top: 17px;
 }
 
+/* Subtitulo */
 p {
     text-align: center;
     font-size: 19px;
     margin-top: -5px;
 }
 
-p a {
-    text-decoration: none;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
-.navbar {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    overflow: hidden;
-    margin: 0;
-    margin: 0;
-    background-color: #4b0b51;
-    padding: 0;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 15px;
-
-
-}
-
-
-h2 {
-    font-size: 30px;
-}
-.navbar a {
-    text-decoration: none;
-    padding: 16px;
-    display: block;
-    margin: 0 10px;
-    font-size: 16px;
-}
-
-.navbar a:hover {
-    text-decoration: underline yellow;
-}
-
+/* Formulário */
 #login {
     background-color: var(--roxo1);
     align-content: center;
@@ -99,12 +63,14 @@ h2 {
     text-align: center;
 }
 
+/* Texto do Formulário */
 #login label {
     color: var(--texto);
     margin-left: 13%;
     font-family: "Anonymous Pro", serif;
 }
 
+/* Inputs dos Formulário */
 #login input {
     height: 30px;
     width: 260px;
@@ -115,28 +81,12 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Esqueci a senha */
 #login a {
-    margin-top: 60px;
-    
+    margin-top: 60px;   
 }
 
-.btn-criar-conta {
-    background-color: var(--roxo2);
-
-    color: var(--texto);
-    border: none;
-
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: "Anonymous Pro", serif;
-}
-
-.btn-criar-conta:hover {
-    text-decoration: underline yellow;
-    
-}
-
+/* Botão de entrar */
 #btn-entrar {
     background-color: var(--roxo1);
     color: #ffcc00;
@@ -154,6 +104,7 @@ h2 {
 
 }
 
+/* Efeito do Botão de entrar */
 #btn-entrar:hover {
     text-decoration: underline yellow;
     
