@@ -30,3 +30,18 @@ main img {
     margin-top: 40px;
     width: 320px;
 }
+
+.noticia {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--roxo2);
+}
+
+p {
+    color: rgb(211, 211, 211);
+    text-align: justify;
+}
+
+iframe {
+    margin-top: 20px;
+}
