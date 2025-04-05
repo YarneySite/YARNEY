@@ -3,7 +3,6 @@
     --roxo1:  #4b0b51;
     --roxo2: #6a1d72;
     --texto: #ffa500;
-    
 }
 
 /*Fontes */
@@ -44,12 +43,14 @@ h1, p, a, h2 {
     overflow: hidden;
     margin: 0;
     margin: 0;
-    background-color: #4b0b51;
+    background-color: black;
+    color: white;
     padding: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 15px;
-
-
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Tamanho da fonte do Subtitulo */

@@ -19,7 +19,6 @@
 
 /* Principal */
 main {
-    background: url(../Imagens/nightcity3.png) no-repeat;
     background-size: cover;
     background-position: center;
     font-family: Arial, Helvetica, sans-serif ;
@@ -31,12 +30,12 @@ main {
 h1 {
     text-align: center;
     font-size: 56px;
-    margin-top: 9px;
+    margin-top: 100px;
 }
 
 /* Div do Formulário */
 #login {
-    background-color: var(--roxo1);
+    background-color: rgb(80, 0, 80);
     margin: 35px auto;
     border-radius: 15px;
     width: 500px;
@@ -65,7 +64,7 @@ h1 {
 #btn-entrar {
     padding: 10px 20px;
     font-size: 20px;
-    background-color: var(--roxo1);
+    background-color: rgb(80, 0, 80);
     color: var(--texto);
     border: none;
     border-radius: 10px;

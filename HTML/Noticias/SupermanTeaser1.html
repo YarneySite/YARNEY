@@ -12,25 +12,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Caveat&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;600;800&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
-
+    
     <header>
         <!--Navegar-->
         <nav class="navbar">
             <h2>YARNEY <img src="../../Imagens/favicon.png" alt=""></h2>
 
             <ul>
-               
-                
+
+
                 <li>
                     <!--Notícias-->
-                    <a href="../../HTML/Noticias.html">Notícias</a>
+                    <a href="../Noticias.html">Notícias</a>
                 </li>
                 <li>
                     <!--Tier List-->
-                    <a href="">Tier List</a>
+                    <a href="">NerdList</a>
                 </li>
                 <li>
                     <!--Quizzes-->
@@ -38,7 +39,7 @@
                 </li>
                 <li>
                     <!--Copinha-->
-                    <a href="">Copinha</a>
+                    <a href="">IA</a>
                 </li>
 
             </ul>
@@ -49,10 +50,30 @@
 
     </header>
     <main>
-        <h1>Superman lança Teaser</h1>
-        <img src="../../Imagens/superman.jpg" alt="">
+        <h1><span id="titulo"></span></h1>
+        <span id="imagem"></span>
         <div class="noticia">
-            <p>
+            <span id="texto"></span>
+        </div>
+        <span id="video"></span>
+    </main>
+
+    <script>
+        class Noticia {
+            constructor(titulo, imagem, texto, video, palavrasChaves, data) {
+                this.titulo = titulo
+                this.imagem = imagem
+                this.texto = texto
+                this.video = video
+                this.palavrasChaves = palavrasChaves
+                this.data = data
+            }
+        }
+        const noticia = new Noticia(
+            "Superman lança Teaser",
+            "<img src='../../Imagens/superman.jpg'>",
+            `
+        <p>
                 Após o lançamento do primeiro pôster do novo filme do Superman dirigido por James Gunn, que marca um novo capítulo 
                 para a DC nos cinemas, o longa agora recebe seu primeiro teaser. Esta prévia antecipa o lançamento do trailer 
                 completo previsto para quinta-feira, dia 19.
@@ -67,7 +88,23 @@
             <p>
                 Com lançamento marcado para 10 de julho de 2025, Superman é o primeiro filme do novo DCU.
             </p>
-        </div>
-        <iframe width="320" height="160" src="https://www.youtube.com/embed/14qzQDMcTqM?si=K29H2QaFuoRNkdht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </main>
+            `,
+            `        <iframe width="320" height="160" src="https://www.youtube.com/embed/14qzQDMcTqM?si=K29H2QaFuoRNkdht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            ["DC", "Heróis", "filmes", "hqs", "superman"],
+            "04/04/25"
+
+
+        )
+
+        function inserirValores() {
+            document.getElementById("titulo").textContent = noticia.titulo
+            document.getElementById("imagem").innerHTML = noticia.imagem
+            document.getElementById("texto").innerHTML = noticia.texto
+            document.getElementById("video").innerHTML = noticia.video
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            inserirValores();
+        });
+    </script>
 </body>
