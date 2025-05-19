@@ -76,8 +76,8 @@
             <div class="flex">
                 <a href="./Noticias/SupermanTeaser1.html">
                     <div id="caixa">
-                        <img id="" src="../Imagens/superman.jpg" alt="">
-                        <p>Superman | Teaser prepara para o lançamento do trailer completo assista</p>
+                        <span id="imagem"></span>
+                        <p><span id="titulo"></span></p>
                     </div>
                 </a>
                 <a href="">
@@ -350,6 +350,56 @@
             </div>
         </div>
     </main>
+
+    <script>
+        class Noticia {
+            constructor(titulo, imagem, texto, video, palavrasChaves, data) {
+                this.titulo = titulo
+                this.imagem = imagem
+                this.texto = texto
+                this.video = video
+                this.palavrasChaves = palavrasChaves
+                this.data = data
+            }
+        }
+        const noticia = new Noticia(
+            "Superman de James Gunn lança novo Trailer",
+            "<img src='../Imagens/superman.jpg'>",
+            `
+        <p>
+                Após o lançamento do primeiro pôster do novo filme do Superman dirigido por James Gunn, que marca um novo capítulo 
+                para a DC nos cinemas, o longa agora recebe seu primeiro teaser. Esta prévia antecipa o lançamento do trailer 
+                completo previsto para quinta-feira, dia 19.
+            </p>
+            <br>
+            <p>
+                James Gunn assina o roteiro e a direção do novo <span>Superman</span>, que acompanha um jovem Clark Kent logo 
+                após deixar Smallville. A história foca no início de sua carreira como repórter em Metrópolis e em sua jornada 
+                como o <span>Superman</span>. No entanto, o filme não abordará sua origem.
+            </p>
+            <br>
+            <p>
+                Com lançamento marcado para 10 de julho de 2025, Superman é o primeiro filme do novo DCU.
+            </p>
+            `,
+            `        <iframe width="320" height="160" src="https://www.youtube.com/embed/14qzQDMcTqM?si=K29H2QaFuoRNkdht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            ["DC", "Heróis", "filmes", "hqs", "superman"],
+            "04/04/25"
+
+
+        )
+
+        function inserirValores() {
+            document.getElementById("titulo").textContent = noticia.titulo
+            document.getElementById("imagem").innerHTML = noticia.imagem
+            document.getElementById("texto").innerHTML = noticia.texto
+            document.getElementById("video").innerHTML = noticia.video
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            inserirValores();
+        });
+    </script>
 
 
 </body>
