@@ -1,8 +1,10 @@
 /*Cores*/
-:root {
-    --roxo1: #4b0b51;
+:root{
+    --roxo1:  #4b0b51;
     --roxo2: #6a1d72;
+    --roxoEscuro: rgb(46, 0, 46);
     --texto: #ffa500;
+    
 }
 
 /*Fontes */
@@ -24,10 +26,7 @@ body {
 }
 
 /* Cor do texto */
-h1,
-p,
-a,
-h2 {
+h1, p, a, h2 {
     color: var(--texto);
 }
 
@@ -50,7 +49,7 @@ h2 {
     color: white;
     padding: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 15px;
+    padding: 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -59,6 +58,8 @@ h2 {
 /* Tamanho da fonte do Subtitulo */
 h2 {
     font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 /* Link do Header */
@@ -72,7 +73,12 @@ h2 {
 
 /* Decoração do Link do Header */
 .navbar a:hover {
-    text-decoration: underline yellow;
+    background-color: var(--texto);
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 1s;
+    transition: color 0.3;
 }
 
 /* Botão para criar a conta*/
@@ -89,19 +95,16 @@ h2 {
 
 /* Efeito de botão para criar a conta */
 .btn-navbar:hover {
-    text-decoration: underline yellow;
-
+    text-decoration: none;
+    background-color: var(--roxoEscuro);
 }
 
 
 .search-container {
     display: flex;
-    justify-content: center;
-    /* Centraliza os itens horizontalmente */
-    align-items: center;
-    /* Alinha os itens verticalmente */
-    width: 25vw;
-    /* Faz o contêiner ocupar a largura total */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;    /* Alinha os itens verticalmente */
+    width: 25vw;            /* Faz o contêiner ocupar a largura total */
 }
 
 #lupa {
@@ -109,8 +112,7 @@ h2 {
     height: 35px;
     background-color: white;
     border: 1px solid black;
-    border-right: none;
-    /* Remove borda direita para unir ao campo de busca */
+    border-right: none; /* Remove borda direita para unir ao campo de busca */
     display: inline-block;
     border-right: 1px solid black;
 }
@@ -120,14 +122,11 @@ input[type="search"] {
     height: 37px;
     background-color: white;
     border: 1px solid black;
-    border-left: none;
-    /* Remove borda esquerda para unir à lupa */
+    border-left: none; /* Remove borda esquerda para unir à lupa */
     padding: 5px;
     box-sizing: border-box;
-    outline: none;
-    /* Remove borda de foco padrão */
+    outline: none; /* Remove borda de foco padrão */
 }
-
 
 @media (max-width: 1100px) {
 
@@ -162,4 +161,11 @@ input[type="search"] {
     h2 {
         display: none;
     }
+    .btn-navbar {
+        background: none;
+    }
+    .btn-navbar a {
+        font-size: 11px;
+    }
 }
+
