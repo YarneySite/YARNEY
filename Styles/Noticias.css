@@ -95,3 +95,15 @@ a {
 .flex {
     display: flex;
 }
+
+@media (max-width: 700px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    #caixa {
+        width: 90vw;
+        height: 160px;
+        margin-left: 3vw;
+    }
+}

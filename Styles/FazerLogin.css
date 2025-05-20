@@ -1,9 +1,9 @@
 /* Cores */
-:root{
-    --roxo1:  #4b0b51c7;
+:root {
+    --roxo1: #4b0b51c7;
     --roxo2: #6a1d72;
     --texto: orange;
-    
+
 }
 
 /* Fontes */
@@ -27,7 +27,10 @@ body {
 }
 
 /* Cor dos texto */
-h1, p, a, h2 {
+h1,
+p,
+a,
+h2 {
     color: var(--texto);
 }
 
@@ -82,7 +85,7 @@ p {
 
 /* Esqueci a senha */
 #login a {
-    margin-top: 60px;   
+    margin-top: 60px;
 }
 
 /* Botão de entrar */
@@ -106,5 +109,22 @@ p {
 /* Efeito do Botão de entrar */
 #btn-entrar:hover {
     text-decoration: underline yellow;
-    
+
+}
+
+@media (max-width: 700px) {
+    #login {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 35px;
+        border-radius: 0px;
+        width: 100vw;
+        height: 240px;
+        font-size: 25px;
+        font-family: "Anonymous Pro", serif;
+        text-align: center;
+    }
 }
