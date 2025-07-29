@@ -1,9 +1,9 @@
 /* Cores */
-:root {
-    --roxo1: #4b0b51c7;
+:root{
+    --roxo1:  #4b0b51c7;
     --roxo2: #6a1d72;
+    --roxoEscuro: rgb(46, 0, 46);
     --texto: orange;
-
 }
 
 /* Fontes */
@@ -20,46 +20,54 @@
 
 /* Corpo */
 body {
-    background-color: #6a1d72;
     background-size: cover;
     /*Mudar as fonter!!*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header{
+    font-weight: bolder;
+}
+
 /* Cor dos texto */
-h1,
-p,
-a,
-h2 {
+h1, p, a, h2 {
     color: var(--texto);
 }
+
 
 /* Título */
 h1 {
     text-align: center;
     font-size: 66px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 /* Subtitulo */
 p {
     text-align: center;
     font-size: 19px;
-    margin-top: -5px;
+    margin-top: 10px;
+}
+
+#criar {
+    text-decoration: none;
+}
+#criar:hover {
+    text-decoration: underline;
 }
 
 /* Formulário */
 #login {
     background-color: rgb(80, 0, 80);
     align-content: center;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    margin-left: 31%;
-    margin-right: 31%;
-    margin-top: 35px;
-    border-radius: 15px;
-    width: 500px;
-    height: 240px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2%;
+    border-radius: 20px;
+    width: 570px;
+    height: 300px;
     font-size: 25px;
     font-family: "Anonymous Pro", serif;
     text-align: center;
@@ -68,24 +76,37 @@ p {
 /* Texto do Formulário */
 #login label {
     color: var(--texto);
-    margin-left: 13%;
     font-family: "Anonymous Pro", serif;
 }
 
 /* Inputs dos Formulário */
 #login input {
-    height: 30px;
-    width: 260px;
-    border-radius: 10px;
-    font-size: 15px;
+    height: 40px;
+    width: 60%;
+    border-radius: 19px;
+    font-size: 20px;
     padding-left: 10px;
     font-family: "Anonymous Pro", serif;
     margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-color: #ffffff;
+}
+
+/*Texto dentro dos formulários */
+#login input::placeholder{
+    font-size: 15px;
 }
 
 /* Esqueci a senha */
 #login a {
-    margin-top: 60px;
+    margin-top: 60px;   
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#login a:hover {
+    text-decoration: underline;
+    transition: background-color 0.5s;
 }
 
 /* Botão de entrar */
@@ -97,34 +118,20 @@ p {
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
-    width: 20%;
+    width: 200px;
     height: 60px;
-    margin-left: 40%;
+    margin-left: 45%;
     margin-right: 40%;
     margin-top: 35px;
     font-family: "Anonymous Pro", serif;
+}
 
+#text_btn-entrar{
+    text-decoration: none;
 }
 
 /* Efeito do Botão de entrar */
 #btn-entrar:hover {
-    text-decoration: underline yellow;
-
-}
-
-@media (max-width: 700px) {
-    #login {
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 35px;
-        border-radius: 0px;
-        width: 100vw;
-        height: 240px;
-        font-size: 25px;
-        font-family: "Anonymous Pro", serif;
-        text-align: center;
-    }
+   background-color: var(--roxoEscuro);
+   transition: background-color 1s;
 }
