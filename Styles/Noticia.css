@@ -5,11 +5,12 @@
 :root{
     --roxo1:  #4b0b51;
     --roxo2: #6a1d72;
-    --texto: #ffa500;
+    /* --texto: #000000; */
 }
 
 header {
     margin-bottom: 20px;
+
 }
 
 main {

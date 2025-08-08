@@ -20,6 +20,8 @@
         <!--Navegar-->
         <nav class="navbar">
             <h2>DnNerds <img src="../Imagens/favicon.png" alt=""></h2>
+            <button onclick="changeTheme()">Alternar Tema</button>
+            
 
             <ul>
 
@@ -59,17 +61,20 @@
 
     <!-- Corpo -->
     <main>
+    
         <!-- Título -->
         <h1>Notícias</h1>
-        <!-- Pesquisa -->
-        
+        <!-- Pesquisa -->;
+
+                
 
         <!-- Parte das noticias -->
         <div id="noticias">
 
             <div class="classe" id="recente">
-                <h2>Notícias Recentes <a href="Recentes.html"><button>Ver mais</button></a></h2>
+                <h2>Notícias Recentes <button class="btn-VerMais"><a class="txt-VerMais" href="Recentes.html">Ver mais</a></button></h2>
                 
+
 
 
             </div>
@@ -111,7 +116,7 @@
             </div>
 
             <div class="classe" id="gamer">
-                <h2>Notícias dos Games <a href="Jogos.html"><button>Ver mais</button></a></h2>
+                <h2>Notícias dos Games <button class="btn-VerMais"><a class="txt-VerMais" href="Jogos.html">Ver mais</a></button></h2>
                 
             </div>
             <div class="flex">
@@ -152,7 +157,7 @@
 
 
             <div class="classe" id="gamer">
-                <h2>Notícias de RPG  <a href="RPG.html"><button>Ver mais</button></a></h2>
+                <h2>Notícias de RPG  <button class="btn-VerMais"><a class="txt-VerMais" href="RPG.html">Ver mais</a></button></h2>
                 
             </div>
             <div class="flex">
@@ -192,7 +197,7 @@
 
 
             <div class="classe" id="tecnologia">
-                <h2>Notícias de Tecnologia <a href="Tecnologias.html"><button>Ver mais</button></a></h2>
+                <h2>Notícias de Tecnologia <button class="btn-VerMais"><a class="txt-VerMais" href="Tecnologias.html">Ver mais</a></button></h2>
                 
             </div>
             <div class="flex">
@@ -232,7 +237,7 @@
 
 
             <div class="classe" id="anime">
-                <h2>Notícias dos Animes <a href="Animes.html"><button>Ver mais</button></a></h2>
+                <h2>Notícias dos Animes <button class="btn-VerMais"><a class="txt-VerMais" href="Animes.html">Ver mais</a></button></h2>
                
             </div>
             <div class="flex">
@@ -271,7 +276,7 @@
 
 
             <div class="classe" id="livros">
-                <h2>Notícias de Livros <a href="Livros.html"><button>Ver mais</button></a></h2>
+                <h2>Notícias de Livros <button class="btn-VerMais"><a class="txt-VerMais" href="Livros.html">Ver mais</a></button></h2>
                 
             </div>
             <div class="flex">
@@ -311,7 +316,7 @@
 
 
             <div class="classe" id="series">
-                <h2>Notícias de Séries <a href="Series.html"><button>Ver mais</button></a></h2>
+                <h2>Notícias de Séries <button class="btn-VerMais"><a class="txt-VerMais" href="Series.html">Ver mais</a></button></h2>
                 
             </div>
 
@@ -351,6 +356,7 @@
         </div>
     </main>
 
+    <script src="../Script/Tema.js"></script>
     <script>
         class Noticia {
             constructor(titulo, imagem, texto, video, palavrasChaves, data) {
