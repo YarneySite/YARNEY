@@ -165,19 +165,3 @@ h1 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
-@media (max-width: 700px) {
-    main {
-        padding: 10px;
-        
-    }
-
-    #login {
-    width: 400px;
-    padding: 10px;
-    font-size: 25px;
-    font-family: "Anonymous Pro", serif;
-    display: flex;
-    flex-direction: column;
-}
-}

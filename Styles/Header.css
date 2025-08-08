@@ -74,6 +74,12 @@ h2 {
 
 /* Decoração do Link do Header */
 .navbar a:hover {
+    color: #000;
+    transition: background-color 1s;
+    transition: color 0.3;
+}
+
+.navbar ul li a:hover {
     background-color: var(--texto);
     color: black;
     border-radius: 30px;
